@@ -7,12 +7,14 @@ import {
   Link
 } from "react-router-dom";
 import { Homepage } from './pages/HomePage';
+import { Header } from './components/Header';
 
 function App() {
 
   return (
     <Router>
       <div>
+        <Header />
         <nav>
           <ul>
             <li>
@@ -26,8 +28,9 @@ function App() {
             </li>
           </ul>
         </nav>
-        
+
         <Switch>
+          {/* NOTE FROM JAMIE: WILL ADD MORE PAGES HERE */}
           {/* <Route path="/about">
             <About />
           </Route>
